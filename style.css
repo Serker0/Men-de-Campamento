@@ -1,0 +1,82 @@
+/*configuracion general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*aca configuro como se veria en computadora*/
+#leftMenu #botonX  {
+    display: none;
+}
+#barras {
+    display: none;
+}
+header{
+    background-color: #1e1e1e;
+    height: auto;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: stretch;
+}
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+nav a:hover{
+    background: #ff5722;
+}
+
+
+/*aca configuro como se veria en una pantalla menor a 850px (celular, tablet, etc)*/
+@media (max-width: 850px){
+    #leftMenu #botonX  {
+        display: block;
+        font-size: 30px;
+
+    }
+    #barras {
+        display: block;
+        font-size: 30px;
+    }
+    .menu i{
+        margin: 10px;
+    }
+    #leftMenu{
+        height: 100vh;
+        position: fixed;
+        width: 0;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: black;
+        overflow-x: hidden;
+        transition: .5s;
+    }
+    .leftNav{
+        margin-top: 70px;
+        display: block;
+    }
+    .leftNav a{
+        margin-bottom: 15px;
+    }
+    #leftMenu a{
+        padding: 8px 8px 8px 15px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        display: block;
+        transition: .5s;
+    }
+}
+
+
+
+
+
+
+
